@@ -80,7 +80,7 @@ class TestCelsiusToFahrenheit:
         assert math.isclose(result, 50.0)
 
     @pytest.mark.parametrize(
-        "celsius, expected_fahrenheit",
+        ("celsius", "expected_fahrenheit"),
         [
             (0, 32),
             (100, 212),
